@@ -1,9 +1,8 @@
 # CDF function for tulap
 #   t - domain of CDF
 #   median - median
-#   lambda - Laplace parameter, as seen on Wikipedia
-#   lcut - cut the leftmost lcut amount
-#   rcut - cut the rightmost rcut amount
+#   lambda - Laplace parameter, as seen on Wikipedia. Denoted as b in the paper
+#   cut is the parameter q from the paper
 ptulap <- function (t, median = 0, lambda = 0, cut=0) {
     lcut=cut/2
     rcut=cut/2
